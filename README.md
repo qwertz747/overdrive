@@ -19,10 +19,10 @@ Teensy 4.0 RC/LED Controller
 [![run](https://img.youtube.com/vi/BgRjPW4X-rY/default.jpg)](https://www.youtube.com/watch?v=BgRjPW4X-rY)
 
 ## Known issue
-* sometime i2c error occures with PCA9685 emulator. 
---> Check battery, issue seems to appears when the motor draws to much current. 
+* sometime i2c error occures with PCA9685 emulator. <br>
+--> Check battery, issue seems to appears when the motor draws to much current. <br>
 --> Check that the pin19(Teensy) is connected with pin5(Nano)and that pin18(Teensy)is connected to pin3(Nano)<br>
---> Check that the Teensy is connected via USB to the Nano. 
+--> Check that the Teensy is connected via USB to the Nano. <br>
 * Some motors seem to be affected by noise. (maybe tired motor)<br>
   * If you feels bad signal with throttle on, try polishing the commutator and brush of the motor.<br>
 
