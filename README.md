@@ -9,7 +9,7 @@ Teensy 4.0 RC/LED Controller
 * 4ch or 3ch rc receiver/transmitter (test with Futaba R334SBS-E/Futaba 7PX)
 * Jetson Nano (I don't test on raspberry pi3/4.)
 
-## Requirement for rc car led decolation
+## Requirement for rc car led decoration
 * Teensy 4.0
 * 4ch or 3ch rc receiver/transmitter
 * USB mobile battery
@@ -19,7 +19,10 @@ Teensy 4.0 RC/LED Controller
 [![run](https://img.youtube.com/vi/BgRjPW4X-rY/default.jpg)](https://www.youtube.com/watch?v=BgRjPW4X-rY)
 
 ## Known issue
-* sometime i2c error occures with PCA9685 emulator.<br>
+* sometime i2c error occures with PCA9685 emulator. 
+--> Check battery, issue seems to appears when the motor draws to much current. 
+--> Check that the pin19(Teensy) is connected with pin5(Nano)and that pin18(Teensy)is connected to pin3(Nano)<br>
+--> Check that the Teensy is connected via USB to the Nano. 
 * Some motors seem to be affected by noise. (maybe tired motor)<br>
   * If you feels bad signal with throttle on, try polishing the commutator and brush of the motor.<br>
 
